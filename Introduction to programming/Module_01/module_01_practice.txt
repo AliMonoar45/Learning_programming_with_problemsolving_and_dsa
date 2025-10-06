@@ -1,0 +1,31 @@
+1>Explain why we need long long int data type? 
+ans:There are memory for every type of data types and also has some limitation for int type of data it has 4bytes and it can store 10^9 but if we need more than that in that case we use long long int it can store upto 19^18 so in summary if we need very big int then we can use long long int 
+
+from Google:The long long int data type is necessary to store integer values that exceed the maximum range of a standard int
+.     A standard int typically occupies 4 bytes (32 bits) of memory, allowing it to store values up to approximately \(2\times 10^{9}\) (specifically, from \(-2,147,483,648\) to \(2,147,483,647\) for a signed int). However, in various programming scenarios, calculations or data storage may require handling significantly larger integer values, such as those found in scientific computations, large-scale data processing, or competitive programming problems where intermediate results can exceed the int limit. The long long int data type addresses this need by utilizing 8 bytes (64 bits) of memory, which expands its range to approximately \(9\times 10^{18}\) (specifically, from \(-9,223,372,036,854,775,808\) to \(9,223,372,036,854,775,807\) for a signed long long int)
+.           Therefore, when working with integer values that are expected to be larger than what a standard int can accommodate, the long long int data type provides the necessary capacity to prevent overflow errors and ensure the correct representation and manipulation of these large numbers.
+
+2>Write all the rules for naming a variable in C programming.
+ans: variable naming rules
+ i. it can be any carecter from(a-z,A-Z,0-9,_) but it cannot start with any desit. cannot be white space or spacial carecter also not those thing that is reserve in c.
+ but over all it has to be meaningful.
+
+3>Write a C program that will take 2 numbers from the user and then print the 2nd number first and then first number.  
+ans:
+#include <stdio.h>
+
+int main()
+{
+    int num1,
+        num2;
+
+    scanf("%d %d", &num1, &num2);
+    printf("Second number : %d \nFirst number : %d", num2, num1);
+    return 0;
+}
+
+input: 10 20
+
+output: 
+Second number : 20 
+First number : 10
