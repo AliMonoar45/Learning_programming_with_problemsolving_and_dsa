@@ -50,7 +50,7 @@ int main()
     printf("I want to give my 100%% dedication to learn!\tI will succeed one day.");
     return 0;
 }
-````
+```
 
 ---
 
