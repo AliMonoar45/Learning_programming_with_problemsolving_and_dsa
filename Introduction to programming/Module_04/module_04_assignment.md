@@ -283,5 +283,4 @@ int main()
 
 ---
 
-Let me know if you'd like a Bengali version side-by-side or want to add a table of contents at the top for easier navigation. You're documenting this like a pro!
 ```
