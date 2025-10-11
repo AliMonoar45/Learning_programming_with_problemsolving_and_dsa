@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    // int n;
-    // scanf("%d", &n);
+    int n;
+    scanf("%d", &n);
     for (int i = 8; i <=200; i+=8)
     {
         printf("%d\n",i );
