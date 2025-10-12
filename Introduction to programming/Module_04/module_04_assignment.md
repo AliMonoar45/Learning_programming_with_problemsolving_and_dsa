@@ -20,7 +20,7 @@ Hello, world! I am learning C programming language. ^\_^
 Programming is fun and challenging. /\/\/\
 I want to give my 100% dedication to learn! I will succeed one day.
 
-```
+````
 
 > Note: The last line contains a tab (`\t`) between the two sentences.
 
@@ -50,7 +50,7 @@ int main()
     printf("I want to give my 100%% dedication to learn!\tI will succeed one day.");
     return 0;
 }
-````
+```
 
 ---
 
