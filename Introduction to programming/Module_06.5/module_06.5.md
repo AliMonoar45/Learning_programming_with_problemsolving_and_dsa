@@ -4,11 +4,7 @@
 02 ➤ [Problem D. Ali Baba and Puzzles](https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/D)
 03 ➤ [Problem K. Divisors](https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/K)
 04 ➤ [Problem I. Lucky Numbers](https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/I)
-
-<!-- 05 ➤ [Problem F. Multiplication table](https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/F)
-06 ➤ [Problem Q. Digits](https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/Q) -->
-
-07 ➤ [Practice Problem ](https://docs.google.com/document/d/1k3-3nSz-zHxwdsa1cPcFR9KfFFJdAQIeAQfkdsVoXVI/edit?tab=t.0)
+06 ➤ [Practice Problem extra ](https://docs.google.com/document/d/1h9lLYr11R0EarM26UxcY3eBnHrzAECmYeR7sT-brsPg/edit?tab=t.0)
 
 ---
 
