@@ -1,0 +1,105 @@
+1. How do you declare a string in C programming?
+a) int str[];
+b) char name[size];
+c) char name;
+d) All of the above
+Explanation: C প্রোগ্রামিংয়ে স্ট্রিং ডিক্লেয়ার করতে char টাইপের অ্যারে ব্যবহার করা হয়, যেমন: char name[size];। এখানে name স্ট্রিং ভেরিয়েবল এবং size হল সর্বোচ্চ ক্যারেক্টার সাইজ।
+
+
+2. What is the null character in C programming?
+a) The character '0'
+b) The character '\0'
+c) The character ''
+d) The character '\'
+Explanation: C প্রোগ্রামিংয়ে NULL ক্যারেক্টার ('\0') হলো স্ট্রিংয়ের শেষ নির্দেশকারী বিশেষ ক্যারেক্টার, যার ASCII মান 0। এটি কম্পাইলারকে বুঝায় যে স্ট্রিংটি এখানেই শেষ।
+
+
+3. What is the purpose of the null character in string?
+a) To indicate the end of a string
+b) To indicate the beginning of a string
+c) To indicate a space in a string
+d) To indicate a special character in a string
+Explanation: C প্রোগ্রামিংয়ে NULL ক্যারেক্টার (\0) স্ট্রিংয়ের শেষ নির্দেশ করে।
+
+
+4. Which of the functions is used to input a string in C programming (with space)?
+a) gets()
+b) fgets()
+c) puts()
+d) Both a and b
+Explanation: C প্রোগ্রামিংয়ে স্পেস সহ স্ট্রিং ইনপুট এর জন্য gets() এবং fgets() ব্যবহার করা যায়।
+
+
+5. What is the escape sequence for (\) in C programming?
+a) \\
+b) //
+c) \t
+d) None of the above
+Explanation: C প্রোগ্রামিংয়ে ব্যাকস্ল্যাশ(\)  লিখতে \\ ব্যবহার করা হয়, কারণ এটি একটি এস্কেপ সিকোয়েন্স। উদাহরণ: printf("\\"); আউটপুট দেবে \
+
+
+6. What will be the output of the following c program?
+#include<stdio.h>
+int main()
+{
+    char str[20] = "HelloW\0rld";
+    printf("%s",str);
+    return 0;
+}
+
+a) HelloWorld
+b) No output. error.
+c) HelloW
+d) None of the above.
+Explanation: NULL ক্যারেক্টার (\0) স্ট্রিংয়ের শেষ নির্দেশ করে, তাই printf("%s",str) শুধুমাত্র HelloW প্রিন্ট করবে (\0-এর পরের অংশ rld ইগনোর করবে)।
+
+
+7. What will be the minimum size of the character array to hold “phitron” with null character?
+a) char str[8];
+b) char str[7];
+c) char str[10];
+d) char str[12];
+Explanation: "phitron" স্ট্রিংয়ের দৈর্ঘ্য 7 ক্যারেক্টার (p,h,i,t,r,o,n) + 1 NULL ক্যারেক্টার (\0) = মোট 8 ক্যারেক্টার। তাই মিনিমাম অ্যারে সাইজ char str[8] হতে হবে।
+
+
+8. Which format specifier is used to work with string?
+a) %c
+b) %s
+c) %d
+d) %str
+Explanation: C প্রোগ্রামিংয়ে স্ট্রিংয়ের জন্য %s ফরম্যাট স্পেসিফায়ার ব্যবহার করা হয়।
+
+
+9. What will be the output of the following code, if we input “Hello World”?
+#include<stdio.h>
+int main()
+{
+    char str[20];
+    scanf("%s",&str);
+    printf("%s",str);
+    return 0;
+}
+
+a) Hello World
+b) Hello
+c) error
+d) None of the above.
+Explanation: scanf("%s",str) এ শুধুমাত্র প্রথম স্পেস পর্যন্ত ইনপুট নেয় ("Hello"), বাকি অংশ ("World") বাদ পড়ে। তাই আউটপুট শুধু Hello
+
+
+10.What will be the output of the following code, if we input “Hello World”?
+#include<stdio.h>
+int main()
+{
+    char str[20];
+    scanf("%c",&str);
+    printf("%s",str);
+    return 0;
+}
+
+a) Hello World
+b) Hello
+c) hello
+d) None of the above.
+
+Explanation:  scanf("%c",&str); এখানে %c ব্যবহার করা হয়েছে যা শুধুমাত্র একটি ক্যারেক্টার ইনপুট নেয় (প্রথম ক্যারেক্টার 'H')। যার কারণে printf("%s") দিয়ে স্ট্রিং প্রিন্ট করার সময় শুধু 'H' প্রিন্ট করতে পারবে। তাই উত্তর: None of the above.

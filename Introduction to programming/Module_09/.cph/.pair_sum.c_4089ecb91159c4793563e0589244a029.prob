@@ -1,0 +1,1 @@
+{"name":"Local: pair_sum","url":"d:\\Phitron\\Introduction to programming\\Module_09\\pair_sum.c","tests":[{"id":1761563420451,"input":"1\n4\n20 1 9 4\n","output":"7\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Phitron\\Introduction to programming\\Module_09\\pair_sum.c","group":"local","local":true}

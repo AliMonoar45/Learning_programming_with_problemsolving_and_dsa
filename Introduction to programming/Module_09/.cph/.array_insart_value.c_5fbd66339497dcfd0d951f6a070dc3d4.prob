@@ -1,0 +1,1 @@
+{"name":"Local: array_insart_value","url":"d:\\Phitron\\Introduction to programming\\Module_09\\array_insart_value.c","tests":[{"id":1761505487489,"input":"5\n1 2 3 4 5\n1 100","output":"1 100 2 3 4 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Phitron\\Introduction to programming\\Module_09\\array_insart_value.c","group":"local","local":true}
