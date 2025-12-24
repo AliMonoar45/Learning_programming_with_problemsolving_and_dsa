@@ -1,0 +1,15 @@
+linked list operations:-
+    Insertion:
+            - at head
+            - at tail
+            - at any position
+    Deletion:
+            - at head
+            - at tail
+            - at any position
+    printing:
+            - forward
+            - backward
+    sorting:
+            - Ascending
+            - Descending

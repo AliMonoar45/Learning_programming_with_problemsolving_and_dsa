@@ -1,0 +1,1 @@
+{"name":"Local: freequency_arr","url":"d:\\Phitron\\Introduction to DSA\\Module_02\\freequency_arr.cpp","tests":[{"id":1765977983574,"input":"10 5\n1 2 3 4 5 3 2 1 5 3","output":"2\n2\n3\n1\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Phitron\\Introduction to DSA\\Module_02\\freequency_arr.cpp","group":"local","local":true}
