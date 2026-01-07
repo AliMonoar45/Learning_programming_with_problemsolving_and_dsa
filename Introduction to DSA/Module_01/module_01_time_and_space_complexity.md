@@ -120,4 +120,4 @@ int main()
 - **Increment or decrement in loop update → O(n).**
 - **No loop (constant work) → O(1).**
 
----
+--- 

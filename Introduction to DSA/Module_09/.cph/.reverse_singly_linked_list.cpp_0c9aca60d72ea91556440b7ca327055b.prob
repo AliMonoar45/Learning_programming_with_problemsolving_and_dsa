@@ -1,0 +1,1 @@
+{"name":"Local: reverse_singly_linked_list","url":"d:\\Phitron\\Introduction to DSA\\Module_09\\reverse_singly_linked_list.cpp","tests":[{"id":1767766315050,"input":"10 20 30 40 -1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Phitron\\Introduction to DSA\\Module_09\\reverse_singly_linked_list.cpp","group":"local","local":true}
