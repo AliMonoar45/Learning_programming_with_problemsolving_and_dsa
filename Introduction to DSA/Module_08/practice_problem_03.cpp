@@ -27,13 +27,13 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     newNode->prev = tail;
     tail = newNode;
 }
-bool is_palindrome(Node *&head, Node *&tail)
+bool is_palindrome(Node *head, Node *tail)
 {
     Node *l = head;
     Node *r = tail;
-    while (l!=r)
+    while (l != r && r != l->prev)
     {
-        if (l->val!=r->val)
+        if (l->val != r->val)
         {
             return false;
         }
@@ -69,11 +69,13 @@ int main()
     if (res)
     {
         cout << "YES";
-    }else{
+    }
+    else
+    {
         cout << "NO";
     }
-    
-    print_dll(head);
+
+    // print_dll(head);
 
     return 0;
 }

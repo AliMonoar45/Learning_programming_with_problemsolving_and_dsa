@@ -25,22 +25,22 @@ int size_of_dll(Node *head)
     }
     return count;
 }
-void reverse_dll(Node* &head,Node* &tail){
+void reverse_dll(Node *&head, Node *&tail)
+{
     Node *left = head;
     Node *right = tail;
 
-    while (left != right) // TODO: implement logic
+    while (left != right && right != left->prev) // TODO: implement logic
 
     {
         swap(left->val, right->val);
         left = left->next;
         right = right->prev;
     }
-    
-
 }
-void print_backward(Node *tail){
-    while (tail!=NULL)
+void print_backward(Node *tail)
+{
+    while (tail != NULL)
     {
         cout << tail->val << " ";
         tail = tail->prev;
@@ -73,7 +73,7 @@ int main()
 {
     Node *head = NULL;
     Node *tail = NULL;
-   
+
     int val;
     while (1)
     {
@@ -83,10 +83,9 @@ int main()
 
         insert_at_tail(head, tail, val);
     }
-
-    // print_forword(head_1);
-    // print_forword(head_2);
-    print_backward(tail);
+    reverse_dll(head, tail);
+    print_forword(head);
+    // print_backward(tail);
 
     return 0;
 }
