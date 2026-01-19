@@ -1,42 +1,36 @@
 #include <bits/stdc++.h>
 using namespace std;
-//  join support session
 int main()
 {
-    int n;
-    cin >> n;
-
-    stack<int> st1;
+    stack<int> st;
+    queue<int> q;
+    int n, m;
+    cin >> n >> m;
     while (n--)
     {
         int x;
         cin >> x;
-        st1.push(x);
+        st.push(x);
     }
-    int m;
-    cin >> m;
-
-    queue<int> q;
     while (m--)
     {
         int x;
         cin >> x;
         q.push(x);
     }
-    if (st1.size() != q.size())
+    if (st.size() != q.size())
     {
         cout << "NO";
         return 0;
     }
-
-    while (!st1.empty() && !q.empty())
+    while (!st.empty())
     {
-        if (st1.top() != q.front())
+        if (st.top() != q.front())
         {
             cout << "NO";
             return 0;
         }
-        st1.pop();
+        st.pop();
         q.pop();
     }
     cout << "YES";
