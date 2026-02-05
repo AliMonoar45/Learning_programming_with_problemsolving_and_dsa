@@ -46,5 +46,32 @@ int main()
     //     cout << endl;
     // }
 
+    /* int n, m;
+    cin >> n >> m;
+    vector<vector<long long>> v(n, vector<long long>(m));
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cin >> v[i][j];
+        }
+    }
+    vector<long long> row_sum(n, 0);
+    bool is_possible = true;
+    for (int i = 0; i < n; i++)
+    {
+        bool has_zero = false;
+        long long sum = 0;
+        for (int j = 0; j < m; j++)
+        {
+            sum += v[i][j];
+            if (v[i][j] == 0)
+                has_zero = true;
+        }
+        row_sum[i] = sum;
+    }
+     */
+
     return 0;
 }
