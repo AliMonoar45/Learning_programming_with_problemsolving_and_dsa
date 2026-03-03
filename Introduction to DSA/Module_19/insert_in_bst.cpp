@@ -16,6 +16,7 @@ public:
 };
 Node *input_tree()
 {
+
     int val;
     cin >> val;
     Node *root;
@@ -28,11 +29,8 @@ Node *input_tree()
         q.push(root);
     while (!q.empty())
     {
-        // first ber kore ana
         Node *parent = q.front();
         q.pop();
-
-        // second oi node nea kaj kora
         int l, r;
         cin >> l >> r;
         Node *myLeft, *myRight;
@@ -44,7 +42,7 @@ Node *input_tree()
             myRight = NULL;
         else
             myRight = new Node(r);
-        // 3 make connection
+
         parent->left = myLeft;
         parent->right = myRight;
         if (parent->left)
@@ -54,47 +52,33 @@ Node *input_tree()
     }
     return root;
 }
-void levelOrder(Node *root)
+void print_level_order(Node *root)
 {
-    if (!root)
+    if(root)
         return;
     queue<Node *> q;
+
     q.push(root);
     while (!q.empty())
     {
-        Node *cur = q.front();
+        Node *parent = q.front();
         q.pop();
-        cout << cur->val << " ";
-        if (cur->left)
-            q.push(cur->left);
-        if (cur->right)
-            q.push(cur->right);
+        cout << parent->val << " ";
+        if (parent->left)
+        {
+            q.push(parent->left);
+        }
+        if (parent->right)
+        {
+            q.push(parent->right);
+        }
+        
+        
     }
-}
-bool search(Node *root, int val)
-{
-    if (root == NULL)
-        return false;
-    if (root->val == val)
-        return true;
-    if (val > root->val)
-    {
-        return search(root->right, val);
-    }
-    else
-    {
-        return search(root->left, val);
-    }
+    
 }
 int main()
 {
-    Node *root = input_tree();
-    int val;
-    cin >> val;
-    // levelOrder(root);
-    if (search(root, val))
-        cout << "found\n";
-    else
-        cout << "not found\n";
+
     return 0;
 }
