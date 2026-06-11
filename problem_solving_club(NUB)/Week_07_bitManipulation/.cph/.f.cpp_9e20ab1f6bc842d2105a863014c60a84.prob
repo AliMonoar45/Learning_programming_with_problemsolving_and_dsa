@@ -1,0 +1,1 @@
+{"name":"Local: f","url":"d:\\Phitron\\problem_solving_club(NUB)\\Week_07_bitManipulation\\f.cpp","tests":[{"id":1778597217807,"input":"4\n5\n10011\n5\n01010\n6\n110100\n7\n0110011\n","output":"Yes\nNo\nNo\nYes"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Phitron\\problem_solving_club(NUB)\\Week_07_bitManipulation\\f.cpp","group":"local","local":true}

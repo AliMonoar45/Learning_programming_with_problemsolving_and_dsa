@@ -1,0 +1,1 @@
+{"name":"Local: BB","url":"d:\\Phitron\\problem_solving_club(NUB)\\Week_08_math_numbr_theory\\BB.cpp","tests":[{"id":1781017660654,"input":"2\n5\n0 0 5 0\n10\n7 1 1 1\n","output":"5\n7\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Phitron\\problem_solving_club(NUB)\\Week_08_math_numbr_theory\\BB.cpp","group":"local","local":true}
