@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+#define test   \
+    int tc;    \
+    cin >> tc; \
+    while (tc--)
+
+#define ll long long
+#define nl '\n'
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    for(auto &i:a)
+        cin >> i;
+    sort(a.begin(), a.end());
+    for (int i = 0; i < n; i++)
+    {
+        cout << a[i] << " ";
+    }
+    
+
+    return 0;
+}

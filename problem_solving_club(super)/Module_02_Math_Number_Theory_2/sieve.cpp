@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+#define test   \
+    int tc;    \
+    cin >> tc; \
+    while (tc--)
+
+#define ll long long
+#define nl '\n'
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+     int n;
+     cin>>n;
+     vector<bool> prime(n + 1, true);
+     for (int i = 2; i <= n; i++)
+     {
+        if(prime[i]){
+            for (int j = i * i; j <= n; j+=i)
+            {
+                prime[j] = false;
+            }
+            
+        }
+     }
+     for (int i = 2; i <=n; i++)
+     {
+        if(prime[i]){
+            cout << i << " ";
+        }
+     }
+     
+     
+     return 0;
+}
