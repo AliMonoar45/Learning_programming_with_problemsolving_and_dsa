@@ -22,17 +22,13 @@ void solve(){
         cin >> ans[i];
         mp[ans[i]] = 1;
     }
-    if(n>m){
-        string s(m, '0');
-        cout << s << nl;
-        return;
-    }
+    
    
     string a = "";
     for (int i = 1; i <= m; i++)
     {
         
-        if(n-1==k-mp[i]){
+        if(n-1==k-mp[q[i]]){
             a += '1';
         }else{
             a += '0';
