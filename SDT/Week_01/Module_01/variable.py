@@ -1,6 +1,6 @@
 age = 45
 interest_rate = 2.5
-name = 'Jhon Doe'
+name = 'John Doe'
 district = "Dhaka"
 is_single = False
 is_sleeping = True
@@ -16,3 +16,6 @@ print(type(age))
 print(type(interest_rate))
 print(type(district))
 print(type(is_sleeping))
+
+text = f"my name is {name}. my age is {age}"
+print(text)
