@@ -15,6 +15,8 @@ class DerivedClass(BaseClass):
 
 2. multilevel inheritance: Dada --> Baba --> Child (Vehicle --> Bus --> AcBus)
 
-3. multiple inheritance 
+3. multiple inheritance : Student (Family, School, Sports)
+
+4. Hybrid 
 
  """
